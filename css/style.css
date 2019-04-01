@@ -30,12 +30,72 @@ section {
 	padding: 0px 7.5%;
 }
 
+.logo {
+	float: left;
+	width: 160px;
+	height: 44px;
+	margin-top: 7px;
+	background: #000;
+}
+
+.searchbox {
+	float: left;
+	width: auto;
+	height: 60px;
+	margin-left: 100px;
+}
+
+.searchbox > .SearchInput {
+	float: left;
+	width: 300px;
+	height: 40px;
+	padding: 0px 15px;
+	border: 1px solid #DDD;
+	border-right: none;
+	border-radius: 3px 0px 0px 3px;
+	margin-top: 10px;
+}
+
+.searchbox > .QuerySearch {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: #FFF;
+	margin-top: 10px;
+	border: 1px solid #DDD;
+	border-radius: 0px 3px 3px 0px;
+}
+
+.searchbox > .QuerySearch > svg {
+	fill: #DDD;
+	width: 24px;
+	height: 24px;
+}
+
+.first-header > .right {
+	float: right;
+}
+
+.first-header > .divider {
+	float: left;
+	width: 1px;
+	height: 40px;
+	margin-top: 10px;
+	background: #DDD;
+}
+
+.notifications > svg, .profile > svg, .cart > svg {
+	width: 24px;
+	height: 24px;
+	fill: #DDD;
+}
+
 .second-header {
 	float: left;
 	width: 85%;
 	height: 58px;
 	padding: 0px 7.5%;
-	border-top: 2px dotted #DDD;
+	border-top: 2px dashed #DDD;
 }
 
 .showcase {
@@ -90,12 +150,29 @@ h1 {
 }
 
 .MoreOffers > .card {
-	width: 25%;
-	height: 90px;
 	float: left;
+	display: inline-block;
+	width: calc(25% - 2px);
+	height: 90px;
 	border-right: 2px dotted #DDD;
 }
 
 .MoreOffers > .card:nth-child(4) {
 	border: none;
+}
+
+.MoreOffers > .card > .pic {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 15px;
+	border-radius: 100%;
+	background: #DDD;
+}
+
+.MoreOffers > .card > p {
+	float: left;
+	width: calc(100% - 100px);
+	margin-left: 5px;
+	margin-top: 30px;
 }
