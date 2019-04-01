@@ -1,7 +1,29 @@
+/* INTEGRAÇÃO DE FONTES */
+@font-face {
+    font-family: Museo100;
+    src: url("../thirdParty/fonts/MuseoSans-100.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Museo300;
+    src: url("../thirdParty/fonts/MuseoSans-300.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Museo500;
+    src: url("../thirdParty/fonts/MuseoSans-100.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Museo700;
+    src: url("../thirdParty/fonts/MuseoSans-100.otf") format("opentype");
+}
+
 /* RESET */
 * {
 	margin: 0px;
 	padding: 0px;
+	font-family: Museo500, "Museo Sans", sans-serif;
 	outline: none;
 }
 
@@ -23,6 +45,15 @@ section {
 	height: auto;
 }
 
+ul {
+	line-height: 1.5em;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 /* ESTILOS */
 .first-header {
 	float: left;
@@ -31,24 +62,25 @@ section {
 	padding: 0px 7.5%;
 }
 
-.logo {
+.logo, .footer-logo {
 	float: left;
 	width: 160px;
 	height: 44px;
 	margin-top: 7px;
-	background: #000;
+	background-image: url(../img/svg/logo.svg);
+	background-size: cover;
 }
 
 .searchbox {
 	float: left;
 	width: auto;
 	height: 60px;
-	margin-left: 100px;
+	margin-left: 22%;
 }
 
 .searchbox > .SearchInput {
 	float: left;
-	width: 300px;
+	width: 340px;
 	height: 40px;
 	padding: 0px 15px;
 	border: 1px solid #DDD;
@@ -63,7 +95,13 @@ section {
 	height: 40px;
 	background: #FFF;
 	margin-top: 10px;
+	cursor: pointer;
 	border: 1px solid #DDD;
+	transition: all 0.18s linear;
+	background-image: url(../img/lupa.svg);
+	background-size: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
 	border-radius: 0px 3px 3px 0px;
 }
 
@@ -71,6 +109,10 @@ section {
 	fill: #DDD;
 	width: 24px;
 	height: 24px;
+}
+
+.searchbox > .QuerySearch:active {
+	border: 1px solid #b30664;
 }
 
 .first-header > .right {
@@ -86,9 +128,30 @@ section {
 }
 
 .notifications > svg, .profile > svg, .cart > svg {
-	width: 24px;
-	height: 24px;
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin: 16px;
 	fill: #DDD;
+}
+
+.profile > p, .cart > p {
+	float: left;
+	margin-top: 20px;
+}
+
+.notifications {
+	float: left;
+	width: 60px;
+	height: 60px;
+	position: relative;
+}
+
+.profile, .cart {
+	float: left;
+	width: 140px;
+	height: 60px;
+	position: relative;
 }
 
 .second-header {
@@ -104,7 +167,7 @@ section {
 	height: 450px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://images.pexels.com/photos/1363799/pexels-photo-1363799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .beforeH1 {
@@ -129,7 +192,7 @@ h1 {
 	clear: both;
 	margin-left: 7.5%;
 	margin-top: 30px;
-	padding: 10px 25px;
+	padding: 15px 25px;
 	background: #b30664;
 	color: #FFF;
 	border: 0px;
@@ -143,7 +206,7 @@ h1 {
 	clear: both;
 	width: 85%;
 	height: 90px;
-	margin: 60px 7.5%;
+	margin: 75px 7.5%;
 	margin-bottom: 0px;
 	border-radius: 7px;
 	box-shadow: 0 0 7px rgba(0,0,0,0.2);
@@ -175,7 +238,7 @@ h1 {
 	float: left;
 	width: calc(100% - 100px);
 	margin-left: 5px;
-	margin-top: 30px;
+	margin-top: 37px;
 }
 
 
@@ -224,8 +287,34 @@ footer {
 	margin-top: 24px;
 	margin-left: 10px;
 	padding: 0px 15px;
+	cursor: pointer;
 	border: none;
 	border-radius: 4px;
 	color: #FFF;
 	background: #56b825;
 }
+
+.footer-logo {
+	width: 242px;
+    height: 60px;
+    clear: both;
+    margin: 50px 0px;
+    margin-left: 7.5%;
+    background-position: center left;
+}
+
+.footer-grid {
+	float: left;
+	clear: both;
+	width: 85%;
+	height: auto;
+	margin: 0px 7.5%;
+	margin-bottom: 40px;
+}
+
+.footer-grid > .part {
+	float: left;
+	width: 25%;
+	height: auto;
+}
+
