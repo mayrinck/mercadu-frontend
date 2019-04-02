@@ -187,7 +187,8 @@ a {
 	color: #333;
 	margin-left: 10px;
 	margin-top: 20px;
-	font-size: 14px;
+	font-size: 13px;
+	font-weight: 600;
 }
 
 .notifications > svg, .profile > svg, .cart > svg {
