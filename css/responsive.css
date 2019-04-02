@@ -1,17 +1,44 @@
+@media screen and (max-width: 1280px) {
+	header {
+		width: 100%;
+		height: 120px;
+	}
+
+	.first-header, .second-header {
+		width: 90%;
+		padding: 0px 5%;
+	}
+
+	.second-header > a > .wrapper {
+		padding-right: 18px;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	body {
 		padding-top: 60px;
 	}
 
-	header {
+	header, .newsletter, .info, .footer-grid {
 		width: 90%;
-		height: 60px;
 		padding: 0px 5%;
+	}
+
+	header {
+		height: 60px;
 	}
 
 	.first-header {
 		width: 100%;
 		padding: 0px;
+	}
+
+	.profile, .cart {
+		width: 60px;
+	}
+
+	.profile > p, .cart > p {
+		display: none;
 	}
 
 	.second-header {
@@ -35,5 +62,26 @@
 	    float: left;
 	    width: 35%;
 	    margin-left: 5%;
+	}
+
+	.beforeH1, h1, .showcase-cta {
+		margin-left: 5%;
+	}
+
+	.MoreOffers {
+		position: absolute;
+		width: 100%;
+		margin: 0px;
+		border-radius: 0px;
+		left: 0px;
+		bottom: 0px;
+	}
+
+	.MoreOffers > .card > p {
+		margin-top: 30px;
+	}
+
+	.footer-logo {
+		margin-left: 5%;
 	}
 }
