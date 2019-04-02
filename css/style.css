@@ -153,14 +153,26 @@ a {
 	float: left;
 	width: 60px;
 	height: 60px;
+	transition: background 0.18s linear;
 	position: relative;
+	cursor: pointer;
 }
 
 .profile, .cart {
 	float: left;
 	width: 140px;
 	height: 60px;
+	transition: background 0.18s linear;
 	position: relative;
+	cursor: pointer;
+}
+
+.profile {
+	width: 115px;
+}
+
+.profile:hover, .cart:hover, .notifications:hover {
+	background: #EEE;
 }
 
 .second-header {
@@ -315,11 +327,44 @@ footer {
 	float: left;
 	width: 85%;
 	height: auto;
+	margin-top: 30px;
 	padding: 0px 7.5%;
 }
 
 .info > .part {
-	height: 200px;
+	height: auto;
+}
+
+.info > .part > .pic {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 15px;
+	border-radius: 100%;
+	background: #DDD;
+}
+
+.info > .part > p {
+	float: left;
+	width: calc(100% - 100px);
+	margin-left: 0px;
+	margin-top: 25px;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+
+.info > .part > p > a {
+	color: #333;
+}
+
+.info > .part > small {
+	float: left;
+	width: calc(100% - 100px);
+	margin-left: 0px;
+	margin-top: 5px;
+	font-size: 14px;
+	color: #999;
 }
 
 .part > strong {
@@ -337,7 +382,7 @@ footer {
 	color: #777;
 }
 
-.part > ul > li > a:hover {
+.part > ul > li > a:hover, .info > .part > p > a:hover {
 	color: #b30664;
 }
 
