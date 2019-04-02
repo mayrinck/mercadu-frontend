@@ -1,0 +1,39 @@
+@media screen and (max-width: 1024px) {
+	body {
+		padding-top: 60px;
+	}
+
+	header {
+		width: 90%;
+		height: 60px;
+		padding: 0px 5%;
+	}
+
+	.first-header {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.second-header {
+		z-index: 3;
+		position: absolute;
+		top: 60px;
+		left: -201px;
+		width: 200px;
+		opacity: 0;
+		height: calc(100vh - 60px);
+		padding: 20px;
+		background: #FFF;
+		border-top: 1px solid #DDD;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.searchbox {
+	    float: left;
+	    width: 35%;
+	    margin-left: 5%;
+	}
+}

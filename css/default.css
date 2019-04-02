@@ -68,6 +68,21 @@ a {
 	padding: 0px 7.5%;
 }
 
+.menu {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	border: none;
+	cursor: pointer;
+	background: #FFF;
+	display: none;
+}
+
+.menu > svg {
+	fill: #b30664;
+}
+
 .logo, .footer-logo {
 	float: left;
 	width: 160px;
@@ -134,6 +149,10 @@ a {
 	background: #DDD;
 }
 
+.second-header {
+	transition: all 0.18s linear;
+}
+
 .second-header > a > .wrapper {
 	float: left;
 	width: auto;
@@ -148,6 +167,11 @@ a {
 	margin-top: 13px;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+header > .active {
+	left: 0px;
+	opacity: 1;
 }
 
 .osso {
