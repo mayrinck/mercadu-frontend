@@ -14,7 +14,7 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1120px) {
 	body {
 		padding-top: 60px;
 	}
@@ -86,8 +86,56 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
+	h1 {
+		width: 50%;
+	}
 
+	.newsletter {
+		height: auto;
+		padding: 15px 5%;
+	}
+
+	.newsletter > p {
+		width: 100%;
+		margin-top: 0px;
+		text-align: center;
+	}
+
+	.newsletter > div {
+		float: left;
+		width: 50%;
+		margin: 10px 25%;
+	}
+
+	.newsletter > div > input {
+		width: calc(100% - 140px);
+	}
+
+	.footer-logo {
+		width: 30%;
+		margin: 15px 35%;
+		background-position: center;
+	}
+
+	.footer-grid > .part, .info > .part {
+		width: 50%;
+	}
+
+	.info {
+		float: left;
+		width: 80%;
+		padding: 0px 10%;
+	}
+
+	.footer-grid {
+		width: 80%;
+		padding: 0px 10%;
+	}
+
+	.footer-grid > .part {
+		height: 280px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -99,5 +147,5 @@
 }
 
 @media screen and (max-width: 320px) {
-	
+
 }
