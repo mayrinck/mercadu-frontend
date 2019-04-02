@@ -134,6 +134,62 @@ a {
 	background: #DDD;
 }
 
+.second-header > a > .wrapper {
+	float: left;
+	width: auto;
+	height: 60px;
+	padding-right: 25px;
+}
+
+.second-header > a > .wrapper > .wpic {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-top: 13px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.osso {
+	background-image: url(../img/pets.svg);
+}
+
+.frut {
+	background-image: url(../img/frutas.svg);
+}
+
+.carn {
+	background-image: url(../img/churrasco.svg);
+}
+
+.lati {
+	background-image: url(../img/laticinios.svg);
+}
+
+.nomk {
+	background-image: url(../img/semglutem.svg);
+}
+
+.doce {
+	background-image: url(../img/doces.svg);
+}
+
+.higi {
+	background-image: url(../img/higiene.svg);
+}
+
+.toys {
+	background-image: url(../img/brinquedos.svg);
+}
+
+.second-header > a > .wrapper > p {
+	float: left;
+	color: #333;
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
 .notifications > svg, .profile > svg, .cart > svg {
 	float: left;
 	width: 28px;
