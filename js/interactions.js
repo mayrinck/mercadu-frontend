@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
 
   $(".profile").click(function(){
-    $(".darkFrame").show();
+    $(".darkFrame, .login").show();
   });
 
   $(".close-modal").click(function(){
