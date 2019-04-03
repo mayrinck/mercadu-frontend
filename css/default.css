@@ -28,6 +28,7 @@
 }
 
 body {
+	overflow-x: hidden;
 	padding-top: 120px;
 }
 
@@ -62,6 +63,7 @@ a {
 
 /* ESTILOS */
 .first-header {
+	position: relative;
 	float: left;
 	width: 85%;
 	height: 60px;
@@ -149,6 +151,181 @@ a {
 	background: #DDD;
 }
 
+.notifications > svg, .profile > svg, .cart > svg {
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin: 16px;
+	fill: #666;
+}
+
+.profile > p, .cart > p {
+	float: left;
+	margin-top: 20px;
+	color: #666;
+	user-select: none;
+	font-weight: 600;
+}
+
+.notifications {
+	float: left;
+	width: 60px;
+	height: 60px;
+	transition: background 0.18s linear;
+	position: relative;
+	user-select: none;
+	cursor: default;
+}
+
+.profile, .cart {
+	float: left;
+	width: 140px;
+	height: 60px;
+	transition: background 0.18s linear;
+	position: relative;
+}
+
+.profile {
+	width: 115px;
+}
+
+.profile:hover, .cart:hover, .notifications:hover {
+	background: #EEE;
+}
+
+.cart {
+	position: relative;
+}
+
+.start-checkout {
+	display: none;
+	position: absolute;
+	width: 240px;
+	height: auto;
+	padding: 20px;
+	background: #FFF;
+	top: 67px;
+	right: 0px;
+	border: 1px solid #EEE;
+}
+
+.cart > .active {
+	display: block;
+}
+
+.start-checkout > .pointer {
+	position: absolute;
+	transform: rotate(45deg);
+	width: 24px;
+	height: 24px;
+	top: -13px;
+	right: 40px;
+	background: #FFF;
+	border-left: 1px solid #EEE;
+	border-top: 1px solid #EEE;
+}
+
+.close-checkout {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 19px;
+    left: 18px;
+	border: none;
+	background: transparent;
+	opacity: 0.4;
+}
+
+.close-checkout > svg {
+	fill: #888;
+}
+
+.start-checkout > .close-checkout:hover {
+	opacity: 1;
+}
+
+.start-checkout > .title {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.start-checkout > .description {
+	color: #888;
+	font-size: 13px;
+	padding: 15px 0px;
+}
+
+.start-checkout > .list-title {
+	float: left;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.start-checkout > table {
+	float: left;
+	width: 100%;
+	color: #888;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+	margin-top: 10px;
+	table-layout: fixed;
+}
+
+.data {
+	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	overflow: hidden;
+	border: none;
+	padding-bottom: 15px;
+}
+
+.more-products {
+	float: left;
+	color: #888;
+	font-weight: 600;
+	font-size: 13px;
+	margin-left: 3px;
+	padding-bottom: 20px;
+}
+
+.price, .frete, .fullPrice {
+	text-align: right;
+}
+
+.pricing {
+	table-layout: auto;
+	margin: 10px 0px;
+}
+
+.pricing > tr > .data {
+	width: 30%;
+  	overflow: visible;
+	padding-bottom: 5px;
+}
+
+.frete, .fullPrice{
+	width: 70%;
+}
+
+.fullPrice {
+	font-size: 26px;
+}
+
+.checkout {
+	width: 100%;
+	height: 40px;
+	border: none;
+	font-size: 13px;
+	background: #b30664;
+	color: #FFF;
+	border-radius: 3px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
 .second-header {
 	transition: all 0.18s linear;
 }
@@ -213,47 +390,6 @@ header > .active {
 	margin-top: 20px;
 	font-size: 13px;
 	font-weight: 600;
-}
-
-.notifications > svg, .profile > svg, .cart > svg {
-	float: left;
-	width: 28px;
-	height: 28px;
-	margin: 16px;
-	fill: #666;
-}
-
-.profile > p, .cart > p {
-	float: left;
-	margin-top: 20px;
-	color: #666;
-	font-weight: 600;
-}
-
-.notifications {
-	float: left;
-	width: 60px;
-	height: 60px;
-	transition: background 0.18s linear;
-	position: relative;
-	cursor: pointer;
-}
-
-.profile, .cart {
-	float: left;
-	width: 140px;
-	height: 60px;
-	transition: background 0.18s linear;
-	position: relative;
-	cursor: pointer;
-}
-
-.profile {
-	width: 115px;
-}
-
-.profile:hover, .cart:hover, .notifications:hover {
-	background: #EEE;
 }
 
 .second-header {
@@ -490,7 +626,62 @@ footer {
 	float: left;
 	width: 80%;
 	color: #777;
-	font-size: 14px;
+	font-weight: 600;
+	font-size: 13px;
 	margin-top: 20px;
 	letter-spacing: 2px;
+}
+
+.footer-grid > .part > ul > li > a {
+	font-weight: 600;
+	font-size: 13px;
+}
+
+/* MODAL */
+.darkFrame {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.45);
+}
+
+.darkFrame > .frame {
+	position: relative;
+	float: left;
+	width: 400px;
+	height: 60vh;
+	background: #FFF;
+	margin-left: calc(50vw - 200px);
+	margin-top: 20vh;
+}
+
+.frame > .close-modal {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	right: -35px;
+	top: -40px;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+}
+
+.frame > .close-modal > svg {
+	fill: #FFF;
+}
+
+.frame > div {
+	float: left;
+	width: 90%;
+	height: auto;
+	padding: 20px 5%;
+}
+
+.login > .title {
+	text-transform: uppercase;
+	font-size: 28px;
 }

@@ -41,6 +41,10 @@
 		display: none;
 	}
 
+	.start-checkout > .pointer {
+		right: 17px;
+	}
+
 	.second-header {
 		z-index: 3;
 		position: absolute;
@@ -135,6 +139,17 @@
 
 	.footer-grid > .part {
 		height: 280px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	body {
+		padding-top: 120px;
+	}
+
+	.searchbox {
+		position: absolute;
+		
 	}
 }
 
