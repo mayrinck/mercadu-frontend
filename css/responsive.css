@@ -162,12 +162,96 @@
 }
 
 @media screen and (max-width: 640px) {
+	.start-checkout {
+		right: 2px;
+	}
 
+	.showcase {
+		height: 350px;
+	}
+
+	.MoreOffers, .footer-logo {
+		display: none;
+	}
+
+	.MoreOffers2 {
+		display: block;
+	}
+
+	h1 {
+		width: 90%;
+		font-size: 36px;
+	}
 }
 
 @media screen and (max-width: 480px) {
 	header {
+		width: 100%;
 		padding: 0px;
+	}
+
+	.searchbox {
+		width: 95%;
+		margin: 0px 2.5%;
+	}
+
+	.notifications {
+		display: none;
+	}
+
+	.MoreOffers2 > .card {
+		float: left;
+		width: calc(100% - 2px);
+		margin-top: 15px;
+	}
+
+	.newsletter > p {
+		font-size: 14px;
+	}
+
+	.newsletter > div {
+		width: 100%;
+		margin: 10px 0px;
+	}
+
+	.newsletter > div > input {
+		width: calc(100% - 30px);
+	}
+
+	.newsletter > div > .send-email {
+		width: 100%;
+		margin: 10px 0px;
+	}
+
+	.info {
+		width: 90%;
+		height: auto;
+		padding: 0px 5%;
+	}
+
+	.footer-grid > .part, .info > .part {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.footer-grid > .part {
+		height: auto;
+		margin-top: 30px;
+	}
+
+	.institucional > p {
+		width: 100%;
+	}
+
+	.darkFrame > .frame {
+		width: 100%;
+		margin-top: 60px;
+		margin-left: 0px;
+	}
+
+	.frame > .close-modal {
+		top: -47px;
+		right: 10px;
 	}
 }
 
