@@ -55,6 +55,7 @@
 		height: calc(100vh - 60px);
 		padding: 20px;
 		background: #FFF;
+		overflow-y: auto;
 		border-top: 1px solid #DDD;
 	}
 
@@ -108,8 +109,8 @@
 
 	.newsletter > div {
 		float: left;
-		width: 50%;
-		margin: 10px 25%;
+		width: 70%;
+		margin: 10px 15%;
 	}
 
 	.newsletter > div > input {
@@ -117,8 +118,9 @@
 	}
 
 	.footer-logo {
-		width: 30%;
-		margin: 15px 35%;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: calc(50% - 121px);
 		background-position: center;
 	}
 
@@ -147,9 +149,15 @@
 		padding-top: 120px;
 	}
 
+	header {
+		height: 120px;
+	}
+
 	.searchbox {
 		position: absolute;
-		
+	    width: 100%;
+	    bottom: -56px;
+	    margin: 0px;
 	}
 }
 

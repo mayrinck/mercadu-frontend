@@ -1,4 +1,4 @@
-var CheckoutActive = 0;
+var ResetModal = ".login, .cadastro";
 
 $(document).ready(function(){
   $(".menu").click(function(){
@@ -10,10 +10,18 @@ $(document).ready(function(){
   });
 
   $(".profile").click(function(){
+  	$(ResetModal).hide();
     $(".darkFrame, .login").show();
+  });
+
+  $(".GoToSignUp").click(function(){
+  	$(ResetModal).hide();
+    $(".cadastro").show();
+    $(".frame").addClass("NeedMoreSpace");
   });
 
   $(".close-modal").click(function(){
     $(".darkFrame").hide();
+    $(".frame").removeClass("NeedMoreSpace");
   });
 });

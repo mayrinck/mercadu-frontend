@@ -559,7 +559,29 @@ footer {
 	height: 60px;
 	margin: 15px;
 	border-radius: 100%;
-	background: #DDD;
+	background-color: #EEE;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bag {
+	background-size: 48px;
+	background-image: url("../img/svg/icons/deal.svg");
+}
+
+.like {
+	background-size: 46px;
+	background-image: url("../img/svg/icons/like.svg");
+}
+
+.insta {
+	background-size: 32px;
+	background-image: url("../img/svg/icons/insta.svg");
+}
+
+.tel {
+	background-size: 32px;
+	background-image: url("../img/svg/icons/phone.svg");
 }
 
 .info > .part > p {
@@ -653,11 +675,15 @@ footer {
 	position: relative;
 	float: left;
 	width: 400px;
-	height: 60vh;
-	max-height: 400px;
+	height: 400px;
 	background: #FFF;
 	margin-left: calc(50vw - 200px);
-	margin-top: 20vh;
+	margin-top: calc(20vh - 50px);
+}
+
+.darkFrame > .NeedMoreSpace {
+	height: auto !important;
+	max-height: none;
 }
 
 .frame > .close-modal {
@@ -682,9 +708,11 @@ footer {
 	width: 90%;
 	height: calc(100% - 40px);
 	padding: 20px 5%;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
-.login > .title, .login > label {
+.login > .title, .login > label, .cadastro > .title, .cadastro > label {
 	float: left;
 	width: 100%;
 	height: auto;
@@ -693,14 +721,17 @@ footer {
 	font-size: 28px;
 }
 
-.login > label {
+.login > label, .cadastro > label {
 	display: block;
 	margin-bottom: 10px;
 	font-size: 13px;
 	text-transform: none;
 }
 
-.login > input[type="email"], .login > input[type="password"] {
+.login > input[type="email"], 
+.login > input[type="password"],
+#name, #c-email, #c-password, 
+#confirm-pass {
 	width: calc(100% - 20px);
 	padding: 10px;
 	border: 1px solid #DDD;
@@ -708,7 +739,12 @@ footer {
 	margin-bottom: 25px;
 }
 
-.confirmLogin {
+.login > a {
+	color: #b30664;
+	font-size: 13px;
+}
+
+.confirmLogin, .ConfirmSignUp {
 	position: absolute;
 	left: 0px;
 	right: 0px;
@@ -738,4 +774,9 @@ footer {
 	color: #b30664;
 	text-align: center;
 	cursor: pointer;
+}
+
+.ConfirmSignUp {
+	position: static;
+	width: 100%;
 }
