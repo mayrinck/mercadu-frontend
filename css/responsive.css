@@ -267,5 +267,19 @@
 }
 
 @media screen and (max-width: 320px) {
+	.menu {
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
 
+	.menu > svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.logo {
+		width: 124px;
+		height: 36px;
+		margin-top: 12px;
+	}
 }
