@@ -6,7 +6,7 @@ $(document).ready(function(){
   });
 
   $(".cart").click(function(){
-    $(".start-checkout").addClass("active");
+    $(".start-checkout").toggleClass("active");
   });
 
   $(".profile").click(function(){

@@ -258,6 +258,10 @@
 		width: 100%;
 	}
 
+	ul {
+		line-height: 2em;
+	}
+
 	.darkFrame > .frame {
 		width: 100%;
 		margin-top: 60px;
