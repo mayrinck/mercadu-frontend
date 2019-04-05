@@ -190,9 +190,20 @@
 		padding: 0px;
 	}
 
+	.second-header {
+		width: calc(100% - 40px);
+	}
+
 	.searchbox {
 		width: 95%;
 		margin: 0px 2.5%;
+	}
+
+	.second-header > a > .wrapper {
+		float: left;
+		width: 100%;
+		padding: 0px;
+		margin-left: 0px;
 	}
 
 	.notifications {

@@ -156,7 +156,7 @@ a {
 	width: 28px;
 	height: 28px;
 	margin: 16px;
-	fill: #666;
+	fill: #AAA;
 }
 
 .profile > p, .cart > p {
@@ -327,7 +327,7 @@ a {
 }
 
 .second-header {
-	transition: all 0.18s linear;
+	transition: all 0.1s linear;
 }
 
 .second-header > a > .wrapper {
