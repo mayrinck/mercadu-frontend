@@ -11,19 +11,19 @@
 
 @font-face {
     font-family: Museo500;
-    src: url("../thirdParty/fonts/MuseoSans-100.otf") format("opentype");
+    src: url("../thirdParty/fonts/MuseoSans-500.otf") format("opentype");
 }
 
 @font-face {
     font-family: Museo700;
-    src: url("../thirdParty/fonts/MuseoSans-100.otf") format("opentype");
+    src: url("../thirdParty/fonts/MuseoSans-700.otf") format("opentype");
 }
 
 /* RESET */
 * {
 	margin: 0px;
 	padding: 0px;
-	font-family: Museo500, "Museo Sans", sans-serif;
+	font-family: "Museo300", "Museo Sans", sans-serif;
 	outline: none;
 }
 
@@ -328,7 +328,12 @@ a {
 }
 
 .second-header {
-	transition: all 0.1s linear;
+	float: left;
+	width: 85%;
+	height: 58px;
+	padding: 0px 7.5%;
+	border-top: 2px dashed #DDD;
+	transition: all 0.15s linear;
 }
 
 .second-header > a > .wrapper {
@@ -350,6 +355,7 @@ a {
 header > .active {
 	left: 0px;
 	opacity: 1;
+	transition: all 0.15s ease-in-out;
 }
 
 .osso {
@@ -391,14 +397,6 @@ header > .active {
 	margin-top: 20px;
 	font-size: 13px;
 	font-weight: 600;
-}
-
-.second-header {
-	float: left;
-	width: 85%;
-	height: 58px;
-	padding: 0px 7.5%;
-	border-top: 2px dashed #DDD;
 }
 
 .showcase {
@@ -508,9 +506,9 @@ h1 {
 /* CONTEÚDO CENTRAL */
 .content {
     float: left;
-    width: 100%;
+    width: 85%;
     height: auto;
-    padding: 25px 5%;
+    padding: 25px 7.5%;
     background: #FFF;
 }
 

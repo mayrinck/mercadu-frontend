@@ -14,14 +14,18 @@
 	}
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1232px) {
 	body {
 		padding-top: 60px;
 	}
 
-	header, .newsletter, .info, .footer-grid {
+	header, .content, .newsletter, .info, .footer-grid {
 		width: 90%;
 		padding: 0px 5%;
+	}
+
+	.content {
+		padding: 25px 5%;
 	}
 
 	header {
@@ -214,6 +218,17 @@
 		display: none;
 	}
 
+	.content {
+		width: 95%;
+		padding: 0px 2.5%;
+		padding-top: 25px;
+	}
+
+	.MoreOffers2 {
+		width: 100%;
+		padding: 0px;
+	}
+
 	.MoreOffers2 > .card {
 		float: left;
 		width: calc(100% - 2px);
@@ -275,6 +290,15 @@
 }
 
 @media screen and (max-width: 320px) {
+	.content {
+		padding: 0px 2.5%;
+	}
+
+	.content {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
 	.menu {
 		margin-top: 15px;
 		margin-bottom: 0px;
