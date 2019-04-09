@@ -435,6 +435,7 @@ h1 {
 	color: #FFF;
 	border: 0px;
 	border-radius: 7px;
+	cursor: pointer;
 	text-transform: uppercase;
 }
 
