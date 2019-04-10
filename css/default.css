@@ -716,7 +716,7 @@ footer {
 }
 
 .darkFrame > .NeedMoreSpace {
-	height: auto !important;
+	height: auto;
 	max-height: none;
 }
 

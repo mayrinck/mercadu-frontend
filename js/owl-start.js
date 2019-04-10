@@ -9,13 +9,16 @@ $(document).ready(function(){
     nav:false,
     responsive:{
         0:{
-            items:4
+            items:2
         },
         600:{
-            items:6
+            items:4
         },
         1000:{
-            items:9
+            items:6
+        },
+        1300:{
+            items:8
         }
     }
   });
