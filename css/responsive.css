@@ -307,17 +307,26 @@
 
 	.menu {
 		margin-top: 15px;
+		margin-left: 0px;
 		margin-bottom: 0px;
 	}
 
 	.menu > svg {
-		width: 24px;
-		height: 24px;
+		width: 32px;
+		height: 32px;
 	}
 
 	.logo {
 		width: 124px;
 		height: 36px;
 		margin-top: 12px;
+	}
+
+	.profile, .cart {
+		width: 50px;
+	}
+
+	.profile > svg, .cart > svg {
+		margin: 16px 11px;
 	}
 }
