@@ -99,7 +99,7 @@
 						</table>
 						
 						<button class="checkout">
-							Ir para Entrega
+							Checkout
 						</button>
 				</div>
 			</div>
@@ -164,16 +164,26 @@
 			<p class="description">Estes são os resultados encontrados para o produto "NOME DO PRODUTO".</p>
 
 			<div class="filters">
-				<p>Filtros:</p>
+				<p>Filtros</p>
 
 				<div class="cell">
 					<label for="price-order">
 						Preço:
 					</label>
-					<select id="price-order">
-						<option>Crescente</option>
-						<option>Decrescente</option>
-					</select>
+					<div id="price-order" class="custom-select">
+						<p class="selected-option">
+							Selecione uma opção...
+						</p>
+						
+						<svg viewBox="0 0 24 24">
+					    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+					</svg>
+						
+						<div id="price-type" class="options">
+							<div class="option v1">Crescente</div>
+							<div class="option v2">Decrescente</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="cell">
@@ -188,7 +198,7 @@
 		<div class="results">
 			<div class="product">
 				<div class="image pao">
-					<!-- IMAGEM DO PRODUTO COMO PLANO DE FUNDO -->
+					<!-- IMAGEM DO PRODUTO COMO PLANO DE FUNDO, DEVE ATRIBUIR UMA CLASSE COM A IMAGEM DE FUNDO DO PRODUTO -->
 				</div>
 
 				<p class="name">

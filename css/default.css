@@ -814,3 +814,54 @@ footer {
 	position: static;
 	width: 100%;
 }
+
+/* Relativo ao select personalizado */
+.custom-select {
+	position: relative;
+	user-select: none;
+	float: left;
+	width: 220px;
+	height: 40px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	z-index: 2;
+}
+
+.custom-select > .selected-option {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+
+.custom-select > svg {
+	position: absolute;
+	right: 6px;
+	top: 8px;
+	width: 24px;
+	height: 24px;
+	fill: #AAA;
+}
+
+.custom-select > .options {
+	display: none;
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	overflow: hidden;
+	border-radius: 3px;
+	width: calc(100% - 2px);
+	border: 1px solid #b30664;
+	background: #FFF;
+}
+
+.options > .option {
+	float: left;
+	width: 90%;
+	padding: 10px 5%;
+}
+
+.options > .option:hover {
+	background: #b30664;
+	color: #FFF;
+}

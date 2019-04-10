@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/produtos.css">
 
-  <title>Mercadu - Compras Online</title>
+  <title>Mercadu - Indice de Produtos</title>
 </head>
 
 <body>
@@ -99,7 +99,7 @@
 						</table>
 						
 						<button class="checkout">
-							Ir para Entrega
+							Checkout
 						</button>
 				</div>
 			</div>
@@ -171,12 +171,57 @@
 		</button>
 		
 		<div class="MoreOffers">
-			<input type="search" name="">
+			<input id="product-search" type="search" name="ProductSearch" placeholder="Pesquise o que deseja...">
+
+			<div class="right">
+				<label>
+					Categoria
+				</label>
+
+				<div id="categoria" class="custom-select">
+					<p class="selected-option">
+						Todos
+					</p>
+					
+					<svg viewBox="0 0 24 24">
+					    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+					</svg>
+					
+					<div id="cat-op" class="options">
+						<div class="option">Animais de Estimação</div>
+						<div class="option">Brinquedos</div>
+						<div class="option">Churrasco</div>
+						<div class="option">Doces e Chocolates</div>
+						<div class="option">Frutas</div>
+						<div class="option">Higiene Pessoal</div>
+						<div class="option">Laticínios</div>
+						<div class="option">Sem Lactose</div>
+					</div>
+				</div>
+
+				<label>
+					Filtrar
+				</label>
+
+				<div id="pricing" class="custom-select">
+					<p class="selected-option">
+						Promoções
+					</p>
+					
+					<svg viewBox="0 0 24 24">
+					    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+					</svg>
+					
+					<div id="pricing-type" class="options">
+						<div class="option">Promoções</div>
+						<div class="option">Mais Vendidos</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<section class="content">
-
 		<h2>Descontos</h2>
 
 		<!-- Real conteúdo da página -->
@@ -228,16 +273,6 @@
 					</div>
 				</div>
 			</div>
-
-			<button class="CTA2">
-				Ver mais produtos
-			</button>
-		</div>
-
-		<div class="companies">
-			<h3>Marcas</h3>
-
-
 		</div>
 	</section>
 

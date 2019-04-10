@@ -24,4 +24,25 @@ $(document).ready(function(){
     $(".darkFrame").hide();
     $(".frame").removeClass("NeedMoreSpace");
   });
+
+  /* Relativo ao funcionamento do select personalizado nas páginas */
+  $("#price-order").click(function(){
+    $("#price-type").slideToggle(150);
+  });
+
+  $("#categoria").click(function(){
+    $("#cat-op").slideToggle(150);
+  });
+
+  $("#pricing").click(function(){
+    $("#pricing-type").slideToggle(150);
+  });
+
+  $(".v1").click(function(){
+    $(".selected-option").text("Crescente");
+  });
+
+  $(".v2").click(function(){
+    $(".selected-option").text("Decrescente");
+  });
 });
