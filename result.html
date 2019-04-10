@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="css/result.css">
 
   <title>Mercadu - Resultados de busca para "NOME DO PRODUTO"</title>
 </head>
@@ -162,11 +162,57 @@
 			<h2>Resultados da Pesquisa</h2>
 
 			<p class="description">Estes são os resultados encontrados para o produto "NOME DO PRODUTO".</p>
+
+			<div class="filters">
+				<p>Filtros:</p>
+
+				<div class="cell">
+					<label for="price-order">
+						Preço:
+					</label>
+					<select id="price-order">
+						<option>Crescente</option>
+						<option>Decrescente</option>
+					</select>
+				</div>
+
+				<div class="cell">
+					<input id="promotions" type="checkbox" name="promo" checked>
+					<label for="promotions">
+						Promoções primeiro
+					</label>
+				</div>
+			</div>
 		</div>
 
 		<div class="results">
 			<div class="product">
-				
+				<div class="image pao">
+					<!-- IMAGEM DO PRODUTO COMO PLANO DE FUNDO -->
+				</div>
+
+				<p class="name">
+					Nome do produto
+				</p>
+
+				<p class="description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</p>
+
+				<p class="value">
+					R$ 10,00
+				</p>
+
+				<p class="old-value">
+					de R$ 18,00
+				</p>
+
+				<button class="buy">
+					Adicionar ao Carrinho
+				</button>
 			</div>
 		</div>
 	</section>
