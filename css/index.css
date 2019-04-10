@@ -266,6 +266,22 @@ h2, h3 {
 	url(https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
+/* Estilos para o Owl Carousel */
+.owl-carousel {
+	float: left;
+	width: calc(100% - 2px);
+	height: auto;
+	margin-top: 20px;
+	padding: 10px 0px;
+	border: 1px solid #eee;
+	overflow: hidden;
+}
+
+.owl-carousel > img {
+	float: left;
+	width: 100%;
+	height: auto;
+}
 
 @media screen and (max-width: 1280px) {
 	.discounts > .wrapper > .product-card {
