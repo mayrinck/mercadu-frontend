@@ -115,6 +115,7 @@ h2 {
 	font-size: 14px;
 	font-weight: 500;
 	color: #888;
+	text-decoration: line-through;
 }
 
 .product > .buy {
