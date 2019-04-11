@@ -37,4 +37,9 @@ $(document).ready(function(){
   $("#pricing").click(function(){
     $("#pricing-type").slideToggle(150);
   });
+
+  /* PRODUCTS.HTML */
+  $("#go-to-search").click(function(){
+    $('#product-search').focus();
+});
 });
