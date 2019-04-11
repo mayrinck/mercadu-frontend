@@ -1,5 +1,5 @@
 var ResetModal = ".login, .cadastro";
-var ResetElements = ".start-checkout, .darkFrame";
+var ResetElements = ".darkFrame";
 
 
 $(document).ready(function(){
