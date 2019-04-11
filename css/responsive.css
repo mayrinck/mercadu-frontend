@@ -198,6 +198,31 @@
 		padding: 0px;
 	}
 
+	.menu {
+		margin-top: 15px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+
+	.menu > svg {
+		width: 32px;
+		height: 32px;
+	}
+
+	.logo {
+		width: 124px;
+		height: 36px;
+		margin-top: 12px;
+	}
+
+	.profile, .cart {
+		width: 50px;
+	}
+
+	.profile > svg, .cart > svg {
+		margin: 16px 11px;
+	}
+
 	.second-header {
 		width: calc(100% - 40px);
 	}
@@ -298,35 +323,7 @@
 @media screen and (max-width: 320px) {
 	.content {
 		padding: 0px 2.5%;
-	}
-
-	.content {
 		padding-top: 25px;
 		padding-bottom: 25px;
-	}
-
-	.menu {
-		margin-top: 15px;
-		margin-left: 0px;
-		margin-bottom: 0px;
-	}
-
-	.menu > svg {
-		width: 32px;
-		height: 32px;
-	}
-
-	.logo {
-		width: 124px;
-		height: 36px;
-		margin-top: 12px;
-	}
-
-	.profile, .cart {
-		width: 50px;
-	}
-
-	.profile > svg, .cart > svg {
-		margin: 16px 11px;
 	}
 }

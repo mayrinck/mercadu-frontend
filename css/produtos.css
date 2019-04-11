@@ -2,6 +2,10 @@
 	display: none;
 }
 
+.showcase {
+	height: 390px;
+}
+
 .MoreOffers {
 	height: 70px;
 	margin-top: 45px;
@@ -9,7 +13,13 @@
 	position: relative;
 }
 
-.right > label {
+.MoreOffers > .right {
+	position: absolute;
+	height: 70px;
+	right: 75px;
+}
+
+.MoreOffers > .right > label {
 	float: left;
 	width: auto;
 	height: auto;
@@ -29,11 +39,6 @@
 	background-image: url(../img/lupa.svg);
 	background-repeat: no-repeat;
 	background-position: 10px;
-}
-
-.right {
-	position: absolute;
-	right: 0px;
 }
 
 .custom-select {
@@ -61,6 +66,31 @@
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	user-select: none;
+}
+
+.StartSearch {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	right: 10px;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	border-radius: 100%;
+	background: #b30664;
+}
+
+.StartSearch > svg {
+	width: 24px;
+	height: 24px;
+	fill: #FFF;
+	transition: all 0.15s linear;
+}
+
+.StartSearch:hover > svg {
+	width: 30px;
+	height: 30px;
 }
 
 .bannerWrapper .banner {
@@ -327,7 +357,55 @@ h2, h3 {
 	}
 }
 
+@media screen and (max-width: 1090px) {
+	.showcase {
+		height: auto;
+	}
+
+	.MoreOffers {
+		display: block !important;
+		height: auto;
+	}
+
+	.MoreOffers > #product-search {
+		width: 100%;
+		border-bottom: 1px dashed #DDD;
+	}
+
+	.MoreOffers > .right {
+		position: static;
+		float: left;
+		width: 100%;
+		height: auto;
+		margin: 0px;
+	}
+
+	.MoreOffers > .right > label {
+		float: left;
+		width: calc(25% - 1px);
+		border-right: 1px dashed #DDD;
+	}
+
+	#categoria, #pricing {
+		float: left;
+		z-index: 3;
+		width: 67% !important;
+	}
+
+	#pricing {
+		z-index: 2;
+	}
+}
+
 @media screen and (max-width: 880px) {
+	body {
+		padding-top: 60px;
+	}
+
+	header {
+		height: 60px;
+	}
+
 	.bannerWrapper, .categories {
 		flex-direction: column;
 	}
@@ -354,7 +432,15 @@ h2, h3 {
 	}
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 560px) {
+	.MoreOffers > .right {
+		position: static;
+		float: left;
+		width: 100%;
+		height: auto;
+		margin: 0px;
+	}
+
 	.discounts > .wrapper > .product-card {
 		width: calc(100% - 1px);
 		padding-bottom: 16%;

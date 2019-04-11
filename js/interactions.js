@@ -37,12 +37,4 @@ $(document).ready(function(){
   $("#pricing").click(function(){
     $("#pricing-type").slideToggle(150);
   });
-
-  $(".v1").click(function(){
-    $(".selected-option").text("Crescente");
-  });
-
-  $(".v2").click(function(){
-    $(".selected-option").text("Decrescente");
-  });
 });
