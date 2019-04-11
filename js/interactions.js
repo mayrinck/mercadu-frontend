@@ -2,6 +2,7 @@ var ResetModal = ".login, .cadastro";
 
 $(document).ready(function(){
   $(".menu").click(function(){
+    $('body').toggleClass("block-scrolling");
     $(".second-header").toggleClass("active");
   });
 

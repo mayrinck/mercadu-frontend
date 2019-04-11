@@ -865,3 +865,8 @@ footer {
 	background: #b30664;
 	color: #FFF;
 }
+
+/* OVERWRITERS */
+.block-scrolling {
+	overflow: hidden !important;
+}
