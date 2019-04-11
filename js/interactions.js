@@ -1,9 +1,12 @@
 var ResetModal = ".login, .cadastro";
+var ResetElements = ".start-checkout, .darkFrame";
+
 
 $(document).ready(function(){
   $(".menu").click(function(){
     $('body').toggleClass("block-scrolling");
     $(".second-header").toggleClass("active");
+    $(ResetElements).hide();
   });
 
   $(".cart").click(function(){

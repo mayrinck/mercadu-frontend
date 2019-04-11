@@ -7,11 +7,11 @@
   "background_color": "#800648",
   "theme_color": "#b30664",
   "lang": "pt-br", 
-  "description": "Um poderoso editor de código em nuvem capaz de editar servidores FTP e repositórios do Github e Gitlab.",
+  "description": "Faça suas compras online com segurança e economia.",
   "icons": [
     {
-      "src": "https://devmind.io/assets/img/pwa/windows/44.png",
-      "sizes": "44x44"
+      "src": "img/pwa-assets/logo192.png",
+      "sizes": "192x192"
     }
   ]
 }
