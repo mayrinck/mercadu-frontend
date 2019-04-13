@@ -152,7 +152,7 @@ a {
 	background: #DDD;
 }
 
-.notifications > svg, .profile > svg, .cart > svg {
+.profile > svg, .cart > svg {
 	float: left;
 	width: 28px;
 	height: 28px;
@@ -166,16 +166,6 @@ a {
 	color: #666;
 	user-select: none;
 	font-weight: 600;
-}
-
-.notifications {
-	float: left;
-	width: 60px;
-	height: 60px;
-	transition: background 0.18s linear;
-	position: relative;
-	user-select: none;
-	cursor: default;
 }
 
 .profile, .cart {

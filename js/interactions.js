@@ -45,5 +45,5 @@ $(document).ready(function(){
   /* PRODUCTS.HTML */
   $("#go-to-search").click(function(){
     $('#product-search').focus();
-});
+  });
 });

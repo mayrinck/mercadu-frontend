@@ -1,0 +1,57 @@
+.bannerWrapper {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	user-select: none;
+}
+
+.bannerWrapper .banner {
+	float: left;
+	width: 32%;
+	height: 160px;
+	background-color: #EEE;
+	border-radius: 5px;
+	overflow: hidden;
+	background: no-repeat center;
+	background-size: cover;
+}
+
+.bannerWrapper .banner > .title {
+	float: left;
+	clear: both;
+	margin-top: 25px;
+	margin-left: 45px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.bannerWrapper .banner > .off {
+	float: left;
+	clear: both;
+	margin-top: 10px;
+	margin-left: 45px;
+	font-size: 42px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.bannerWrapper .img1 {
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	url(https://images.pexels.com/photos/1105325/bbq-meet-eating-diner-1105325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.bannerWrapper .img2 {
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	url(https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.bannerWrapper .img3 {
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	url(https://images.pexels.com/photos/289368/pexels-photo-289368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
