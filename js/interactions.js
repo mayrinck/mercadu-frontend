@@ -1,4 +1,4 @@
-var ResetModal = ".login, .cadastro";
+var ResetModal = ".login, .cadastro, .product-modal";
 var ResetElements = ".darkFrame";
 
 
@@ -16,6 +16,11 @@ $(document).ready(function(){
   $(".profile").click(function(){
   	$(ResetModal).hide();
     $(".darkFrame, .login").show();
+  });
+
+  $(".product-image").click(function(){
+  	$(ResetModal).hide();
+    $(".darkFrame, .product-modal").show();
   });
 
   $(".GoToSignUp").click(function(){

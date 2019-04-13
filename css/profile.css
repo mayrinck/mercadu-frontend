@@ -42,16 +42,16 @@
 }
 
 .bannerWrapper .img1 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/1105325/bbq-meet-eating-diner-1105325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .bannerWrapper .img2 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .bannerWrapper .img3 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/289368/pexels-photo-289368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }

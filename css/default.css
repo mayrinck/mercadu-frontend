@@ -459,7 +459,7 @@ h1 {
 	border-radius: 4px;
 }
 
-.MoreOffers2 > .card:nth-child(2), 
+.MoreOffers2 > .card:nth-child(2),
 .MoreOffers2 > .card:nth-child(4) {
 	float: right;
 }
@@ -752,9 +752,9 @@ footer {
 	text-transform: none;
 }
 
-.login > input[type="email"], 
+.login > input[type="email"],
 .login > input[type="password"],
-#name, #c-email, #c-password, 
+#name, #c-email, #c-password,
 #confirm-pass {
 	width: calc(100% - 20px);
 	padding: 10px;
@@ -856,7 +856,13 @@ footer {
 	color: #FFF;
 }
 
-/* OVERWRITERS */
+/* OVERRIDES */
 .block-scrolling {
 	overflow: hidden !important;
+}
+
+.large { /* USAR SOMENTE NO MODAL - CLASSE (.frame) */
+	width: 60vw !important;
+	margin-left: 25vw !important;
+	border-radius: 5px;
 }

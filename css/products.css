@@ -126,17 +126,17 @@
 }
 
 .bannerWrapper .img1 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/1105325/bbq-meet-eating-diner-1105325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .bannerWrapper .img2 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .bannerWrapper .img3 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/289368/pexels-photo-289368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
@@ -184,6 +184,7 @@ h2, h3 {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	cursor: help;
 }
 
 .pao {
@@ -321,35 +322,114 @@ h2, h3 {
 }
 
 .categories .img1 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/1105325/bbq-meet-eating-diner-1105325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .categories .img2 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/209403/pexels-photo-209403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .categories .img3 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/1324430/pexels-photo-1324430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .categories .img4 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/1693654/pexels-photo-1693654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .categories .img5 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .categories .img6 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
 	url(https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
+.frame > .product-modal {
+	float: left;
+	width: calc(100% - 40px);
+	height: auto;
+	padding: 20px;
+	position: relative;
+}
+
+.frame > .product-modal > .stats {
+	float: left;
+	width: 200px;
+	height: auto;
+}
+
+.product-modal > .stats > .product-image {
+	float: left;
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.product-modal > .stats > .product-name,
+.product-modal > .stats > .product-owner,
+.product-modal > .stats > .product-price {
+	float: left;
+	width: 100%;
+	margin: 10px 0px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.product-modal > .stats > .product-owner {
+	margin-top: 0px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #888;
+}
+
+.product-modal > .stats > .product-price {
+	font-size: 28px;
+	color: #b30664;
+	margin-bottom: 0px;
+}
+
+.frame > .product-modal > .description {
+	float: right;
+	width: calc(100% - 220px);
+	height: auto;
+}
+
+.product-modal > .description > .title {
+	float: left;
+	clear: both;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.product-modal > .description > .text {
+	float: left;
+	clear: both;
+	font-size: 14px;
+	color: #444;
+}
+
+.product-modal > .buy {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: calc(100% - 265px);
+	height: 44px;
+	border: none;
+	color: #FFF;
+	background: #b30664;
+	border-radius: 4px;
+}
 
 @media screen and (max-width: 1280px) {
 	.discounts > .wrapper > .product-card {
