@@ -1,57 +1,70 @@
-.bannerWrapper {
+.profile-container {
+	position: relative;
+	float: left;
+	width: calc(100% - 2px);
+	height: auto;
+	min-height: 400px;
+	border: 1px solid #DDD;
+}
+
+.profile-container > aside {
+	position: absolute;
+	float: left;
+	width: 25%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	border-right: 1px solid #DDD;
+	background: #EEE;
+	overflow: hidden;
+}
+
+.profile-container > aside > .user-info {
+	float: left;
+	width: calc(100% - 40px);
+	height: auto;
+	padding: 20px;
+	background: #FFF;
+	border-bottom: 1px solid #DDD;
+}
+
+aside > .user-info > .name,
+aside > .user-info > .rank {
+	float: left;
+	width: 100%;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+aside > .user-info > .rank {
+	font-weight: 500;
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 0px;
+}
+
+.profile-container > aside > button  {
 	float: left;
 	width: 100%;
 	height: auto;
-	padding-bottom: 30px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-	user-select: none;
+	padding: 20px;
+	background: #FFF;
+	border: none;
+	text-align: left;
+	color: #888;
+	border-bottom: 1px solid #DDD;
 }
 
-.bannerWrapper .banner {
-	float: left;
-	width: 32%;
-	height: 160px;
-	background-color: #EEE;
-	border-radius: 5px;
-	overflow: hidden;
-	background: no-repeat center;
-	background-size: cover;
+.profile-container > aside > .active {
+	color: #222;
+	background: #EEE;
 }
 
-.bannerWrapper .banner > .title {
-	float: left;
-	clear: both;
-	margin-top: 25px;
-	margin-left: 45px;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #FFF;
-}
-
-.bannerWrapper .banner > .off {
-	float: left;
-	clear: both;
-	margin-top: 10px;
-	margin-left: 45px;
-	font-size: 42px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #FFF;
-}
-
-.bannerWrapper .img1 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-	url(https://images.pexels.com/photos/1105325/bbq-meet-eating-diner-1105325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-}
-
-.bannerWrapper .img2 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-	url(https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-}
-
-.bannerWrapper .img3 {
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-	url(https://images.pexels.com/photos/289368/pexels-photo-289368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+.profile-container > .section-container {
+	float: right;
+	width: calc(75% - 1px);
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
