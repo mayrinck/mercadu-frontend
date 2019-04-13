@@ -20,6 +20,7 @@ $(document).ready(function(){
 
   $(".product-image").click(function(){
   	$(ResetModal).hide();
+    $(".frame").addClass("large");
     $(".darkFrame, .product-modal").show();
   });
 
@@ -32,6 +33,7 @@ $(document).ready(function(){
   $(".close-modal").click(function(){
     $(".darkFrame").hide();
     $(".frame").removeClass("NeedMoreSpace");
+    $(".frame").removeClass("large");
   });
 
   /* Relativo ao funcionamento do select personalizado nas páginas */
