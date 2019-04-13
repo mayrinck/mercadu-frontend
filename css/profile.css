@@ -56,7 +56,12 @@ aside > .user-info > .rank {
 	border-bottom: 1px solid #DDD;
 }
 
-.profile-container > aside > .active {
+.profile-container > aside > button:hover {
+	color: #b30664;
+}
+
+.profile-container > aside > .active,
+.profile-container > aside > .active:hover {
 	color: #222;
 	background: #EEE;
 }
