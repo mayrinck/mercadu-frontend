@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
 
   <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="manifest" href="https://mayrinck.github.io/mercadu-frontend/manifest.json">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/result.css">
 
-  <title>Seu Perfil - Mercadu</title>
+  <title>Mercadu - Resultados de busca para "NOME DO PRODUTO"</title>
 </head>
 
 <body>
@@ -20,19 +21,19 @@
 				<svg viewBox="0 0 24 24">
 	    			<path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
 				</svg>
-			</button>
+			</button>	
 
 			<a href="index.html">
 				<div class="logo"></div>
 			</a>
-
+			
 			<div class="searchbox">
 				<input class="SearchInput" type="search" placeholder="Pesquise produtos..." name="SearchInput">
 				<button class="QuerySearch">
-
+					
 				</button>
 			</div>
-
+			
 			<div class="right">
 				<div class="divider"></div>
 
@@ -42,7 +43,7 @@
 					</svg>
 					<p class="status">Login</p>
 				</div>
-
+				
 				<div class="cart">
 					<svg viewBox="0 0 24 24">
 		    			<path d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
@@ -93,13 +94,14 @@
 						        </td>
 						    </tr>
 						</table>
-
+						
 						<button class="checkout">
 							Checkout
 						</button>
 				</div>
 			</div>
 		</div>
+		
 		<nav class="second-header">
 			<a href="#">
 				<div class="wrapper">
@@ -153,51 +155,76 @@
 	</header>
 
 	<section class="content">
-		<!-- Real conteúdo da página -->
-		<div class="bannerWrapper">
-		    <div class="banner img1">
-		        <p class="title">Carnes em Desconto</p>
-		        <p class="off">75% OFF</p>
-		    </div>
-		    <div class="banner img2">
-		        <p class="title">Frutas em Desconto</p>
-		        <p class="off">50% OFF</p>
-		    </div>
-		    <div class="banner img3">
-		        <p class="title">Laticínios em Desconto</p>
-		        <p class="off">35% OFF</p>
-		    </div>
+		<div class="topbox">
+			<h2>Resultados da Pesquisa</h2>
+
+			<p class="description">Estes são os resultados encontrados para o produto "NOME DO PRODUTO".</p>
+
+			<div class="filters">
+				<p>Filtros</p>
+
+				<div class="cell">
+					<label for="price-order">
+						Preço:
+					</label>
+					<div id="price-order" class="custom-select">
+						<p class="selected-option">
+							Selecione uma opção...
+						</p>
+						
+						<svg viewBox="0 0 24 24">
+					    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+					</svg>
+						
+						<div id="price-type" class="options">
+							<div class="option v1">Crescente</div>
+							<div class="option v2">Decrescente</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cell">
+					<input id="promotions" type="checkbox" name="promo" checked>
+					<label for="promotions">
+						Promoções primeiro
+					</label>
+				</div>
+			</div>
 		</div>
 
-  <div class="profile-container">
-    <aside>
-      <div class="info">
-        <p class="name">Nome do Usuário</p>
-        <p class="card-number">
-          3316-4412-6754-9843
-        </p>
-      </div>
-      <button>
-        Informações Pessoais
-      </button>
-      <button>
-        Endereços de Entrega
-      </button>
-      <button>
-        Pagamento
-      </button>
-      <button>
-        Conta
-      </button>
-    </aside>
-    <div class="section-container">
+		<div class="results">
+			<div class="product">
+				<div class="image pao">
+					<!-- IMAGEM DO PRODUTO COMO PLANO DE FUNDO, DEVE ATRIBUIR UMA CLASSE COM A IMAGEM DE FUNDO DO PRODUTO -->
+				</div>
 
-    </div>
-  </div>
+				<p class="name">
+					Nome do produto
+				</p>
 
+				<p class="description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</p>
+
+				<p class="value">
+					R$ 10,00
+				</p>
+
+				<p class="old-value">
+					de R$ 18,00
+				</p>
+
+				<button class="buy">
+					Adicionar ao Carrinho
+				</button>
+			</div>
+		</div>
 	</section>
 
-<footer>
+	<footer>
 	<div class="newsletter">
 		<p>Receba as melhores promoções no seu email!</p>
 
@@ -274,9 +301,9 @@
 			</ul>
 		</div>
 	</div>
-</footer>
+	</footer>
 
-<section class="darkFrame">
+	<section class="darkFrame">
 	<div class="frame">
 		<button class="close-modal">
 			<svg viewBox="0 0 24 24">
@@ -323,7 +350,7 @@
 			<label for="confirm-pass">Repita a Senha</label>
 			<input id="confirm-pass" type="password" name="password-confirm">
 
-
+			
 			<label for="terms">
 				<input id="terms" type="checkbox" name="terms">
 				Lí e concordo com os <a href="#">Termos de Serviço</a>
@@ -334,12 +361,9 @@
 			</button>
 		</div>
 	</div>
-</section>
-
+	</section>
 </body>
 </html>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="thirdParty/OwlCarousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/owl-start.js"></script>
 <script type="text/javascript" src="js/interactions.js"></script>
