@@ -88,3 +88,7 @@ aside > .user-info > .rank {
     height: auto;
     margin-bottom: 10px;
 }
+
+.personal-info > p > span {
+    font-weight: 600;
+}
