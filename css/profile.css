@@ -77,9 +77,9 @@ aside > .user-info > .rank {
 
 .section-container > div {
     float: left;
-    width: 100%;
+    width: calc(100% - 40px);
     height: auto;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .personal-info > .name {
