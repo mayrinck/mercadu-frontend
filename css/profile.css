@@ -81,3 +81,10 @@ aside > .user-info > .rank {
     height: auto;
     padding-top: 20px;
 }
+
+.personal-info > .name {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
