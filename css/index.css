@@ -232,15 +232,6 @@ h2, h3 {
 }
 
 @media screen and (max-width: 880px) {
-	.bannerWrapper, .categories {
-		flex-direction: column;
-	}
-
-	.bannerWrapper > .banner {
-		width: 100%;
-		margin-bottom: 25px;
-	}
-
 	.discounts > .wrapper > .product-card {
 		width: calc(50% - 1px);
 		padding-bottom: 10%;
