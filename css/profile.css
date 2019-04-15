@@ -1,5 +1,33 @@
 h3 {
+	float: left;
+	width: 100%;
 	margin-bottom: 25px;
+}
+
+.status-message {
+	float: left;
+	width: calc(100% - 42px);
+	padding: 20px;
+	color: #444;
+	background: #FFF;
+	border: 1px solid #DDD;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+
+.error {
+	color: #FF4040;
+	border-color: #FF4040;
+}
+
+.caution {
+	color: #e0a51d;
+	border-color: #e0a51d;
+}
+
+.success {
+	color: #23c153;
+	border-color: #23c153;
 }
 
 .profile-container {
@@ -104,8 +132,8 @@ aside > .user-info > .rank {
 	display: block;
 }
 
-.personal-info > label,
-.personal-info > .changer {
+.section-container div label,
+.section-container div .changer {
     float: left;
     width: 240px;
     height: auto;
@@ -113,26 +141,33 @@ aside > .user-info > .rank {
 		clear: both;
 }
 
-.personal-info > label {
+.section-container div label {
 	width: 100%;
 	font-size: 13px;
 	color: #888;
 	margin-bottom: 10px;
 }
 
-.personal-info > .changer {
+.section-container div .changer {
 	padding: 10px;
 	border: 1px solid #888;
 	border-radius: 4px;
 }
 
-#save-info {
+.full {
+	width: calc(100% - 22px) !important;
+}
+
+#save-info,
+#delete-acc,
+#save-pass-info,
+#save-new-address {
 	float: left;
 	clear: both;
-	width: auto;
+	width: 262px;
 	height: auto;
 	margin-top: 30px;
-	padding: 15px;
+	padding: 15px 0px;
 	color: #FFF;
 	background: #b30664;
 	border-radius: 4px;
@@ -272,6 +307,26 @@ aside > .user-info > .rank {
 	margin-bottom: 0px;
 }
 
+.col-right,
+.col-left {
+	float: right;
+	width: 49%;
+	height: auto;
+}
+
+.col-left {
+	float: left;
+}
+
+#delete-acc {
+	background: #FF4040;
+	margin-top: 0px;
+}
+
+.registerNewAddress {
+	display: none;
+}
+
 .bannerWrapper {
 	margin-top: 40px;
 }
@@ -288,6 +343,14 @@ aside > .user-info > .rank {
 
 	.profile-container > .section-container {
 		width: calc(100% - 68px);
+	}
+
+	.account-info > .col-right,
+	.account-info > .col-left {
+		float: left;
+		clear: both;
+		width: 100%;
+		margin-bottom: 30px;
 	}
 }
 
@@ -317,8 +380,14 @@ aside > .user-info > .rank {
 		padding: 20px 5%;
 	}
 
+	.account-info > label,
 	.personal-info > label,
+	.account-info > .changer,
 	.personal-info > .changer {
 		width: calc(100% - 20px);
+	}
+
+	#save-info, #save-pass-info, #delete-acc {
+		width: 100%;
 	}
 }

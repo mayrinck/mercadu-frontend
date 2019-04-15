@@ -1004,3 +1004,7 @@ footer {
 	margin-left: 25vw !important;
 	border-radius: 5px;
 }
+
+.danger {
+  color: #FF4040;
+}

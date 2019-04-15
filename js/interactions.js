@@ -79,11 +79,14 @@ $(document).ready(function(){
 
   $("#showAddressInfo").click(function(){
     $(ResetSections).hide();
-    $(".address-info").show();
+    $(".registerNewAddress").hide();
+    $(".address-info, .currentAddress").show();
   });
 
   $("#showPaymentInfo").click(function(){
+    $(".addCard").hide();
     $(ResetSections).hide();
+    $(".currentCards").show();
     $(".payment-info").show();
   });
 
@@ -94,5 +97,15 @@ $(document).ready(function(){
 
   $(".manage").click(function(){
     $(".options", this).toggle();
+  });
+
+  $("#create-new-address").click(function(){
+    $(".currentAddress").hide();
+    $(".registerNewAddress").show();
+  });
+
+  $("#create-new-card").click(function(){
+    $(".currentCards").hide();
+    $(".addCard").show();
   });
 });

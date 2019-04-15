@@ -156,6 +156,10 @@
 
 	<section class="content">
 	<!-- Real conteúdo da página -->
+  <div class="status-message success">
+    Suas informações foram salvas com sucesso!
+  </div>
+
   <div class="profile-container">
     <aside>
       <div class="user-info">
@@ -257,50 +261,121 @@
           </button>
         </div>
         <div class="registerNewAddress">
+          <h3>Cadastrar Novo Endereço</h3>
 
+          <label for="data-address">Endereço:</label>
+          <input type="text" class="changer full" id="data-address">
+
+          <div class="col-left">
+            <label for="data-zip">CEP:</label>
+            <input type="tel" class="changer full" id="data-zip">
+
+            <label for="data-number">Número:</label>
+            <input type="text" class="changer full" id="data-number">
+          </div>
+
+          <div class="col-right">
+            <label for="data-extra">Complemento:</label>
+            <input type="text" class="changer full" id="data-extra">
+
+            <label for="data-city">Cidade:</label>
+            <input type="text" class="changer full" id="data-city">
+          </div>
+
+          <button id="save-new-address">
+            Cadastrar
+          </button>
         </div>
       </div>
       <div class="payment-info">
-        <h3>Seus cartões</h3>
+        <div class="currentCards">
+          <h3>Seus cartões</h3>
 
-        <div class="credit-card-entry active">
-          <div class="flag visa"></div>
-          <p class="title">1111 2222 3333 4444</p>
+          <div class="credit-card-entry active">
+            <div class="flag visa"></div>
+            <p class="title">1111 2222 3333 4444</p>
 
-          <div class="manage">
-            <svg viewBox="0 0 24 24">
-                <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
-            </svg>
+            <div class="manage">
+              <svg viewBox="0 0 24 24">
+                  <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
+              </svg>
 
-            <div class="options">
-              <p class="mark">Tornar Padrão</p>
-              <p class="delete">Excluir</p>
+              <div class="options">
+                <p class="mark">Tornar Padrão</p>
+                <p class="delete">Excluir</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="credit-card-entry">
-          <div class="flag mastercard"></div>
-          <p class="title">5555 4444 3333 2222</p>
+          <div class="credit-card-entry">
+            <div class="flag mastercard"></div>
+            <p class="title">5555 4444 3333 2222</p>
 
-          <div class="manage">
-            <svg viewBox="0 0 24 24">
-                <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
-            </svg>
+            <div class="manage">
+              <svg viewBox="0 0 24 24">
+                  <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
+              </svg>
 
-            <div class="options">
-              <p class="mark">Tornar Padrão</p>
-              <p class="delete">Excluir</p>
+              <div class="options">
+                <p class="mark">Tornar Padrão</p>
+                <p class="delete">Excluir</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <button class="addButton" id="create-new-card">
-          + Cadastrar Cartão
-        </button>
+          <button class="addButton" id="create-new-card">
+            + Cadastrar Cartão
+          </button>
+        </div>
+        <div class="addCard">
+          <h3>Cadastrar Novo Cartão</h3>
+
+          <div class="col-left">
+            <label for="data-card-name">Nome no Cartão</label>
+            <input type="text" class="changer full" id="data-card-name">
+
+            <label for="data-valid-thru">Vencimento</label>
+            <input type="text" class="changer full" id="data-valid-thru">
+          </div>
+
+          <div class="col-right">
+            <label for="data-card-number">Número do Cartão</label>
+            <input type="tel" class="changer full" id="data-card-number">
+
+            <label for="data-ccv">CCV</label>
+            <input type="text" class="changer full" id="data-ccv">
+          </div>
+
+          <button id="save-new-address">
+            Cadastrar
+          </button>
+        </div>
       </div>
       <div class="account-info">
-        <h3>Informações de Segurança</h3>
+        <div class="col-left">
+          <h3>Informações de Segurança</h3>
+
+          <label for="data-old-pass">Senha Antiga:</label>
+          <input type="password" class="changer" id="data-old-pass">
+
+          <label for="data-pass">Nova Senha:</label>
+          <input type="password" class="changer" id="data-pass">
+
+          <label for="data-pass-repeat">Repita a Senha:</label>
+          <input type="password" class="changer" id="data-pass-repeat">
+
+          <button id="save-pass-info">
+            Alterar Senha
+          </button>
+        </div>
+
+        <div class="col-right">
+          <h3 class="danger">Excluir Conta</h3>
+
+          <button id="delete-acc">
+            Iniciar Exclusão
+          </button>
+        </div>
       </div>
     </div>
   </div>
