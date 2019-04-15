@@ -1,12 +1,24 @@
+/////////////////////////
+// VARIÁVEIS
+/////////////////////////
+/* Seleciona o conteúdo dos modais */
 var ResetModal = ".login, .cadastro, .product-modal";
-var ResetElements = ".darkFrame";
+
+/* Seleciona os botões das seções no perfil */
+var allButtons = "aside > button";
+
+/* Seleciona o conteúdo das seções no perfil */
+var ResetSections = ".personal-info, .address-info, .payment-info, .account-info";
 
 
+/////////////////////////
+// INTERAÇÕES
+/////////////////////////
 $(document).ready(function(){
   $(".menu").click(function(){
     $('body').toggleClass("block-scrolling");
     $(".second-header").toggleClass("active");
-    $(ResetElements).hide();
+    $(".darkFrame").hide();
   });
 
   $(".cart").click(function(){
@@ -49,8 +61,34 @@ $(document).ready(function(){
     $("#pricing-type").slideToggle(150);
   });
 
-  /* PRODUCTS.HTML */
+  // PRODUCTS.HTML
   $("#go-to-search").click(function(){
     $('#product-search').focus();
+  });
+
+  // PROFILE.HTML
+  $(allButtons).click(function(){
+    $(allButtons).removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $("#showPersonalInfo").click(function(){
+    $(ResetSections).hide();
+    $(".personal-info").show();
+  });
+
+  $("#showAddressInfo").click(function(){
+    $(ResetSections).hide();
+    $(".address-info").show();
+  });
+
+  $("#showPaymentInfo").click(function(){
+    $(ResetSections).hide();
+    $(".payment-info").show();
+  });
+
+  $("#showAccountInfo").click(function(){
+    $(ResetSections).hide();
+    $(".account-info").show();
   });
 });
