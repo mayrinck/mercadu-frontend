@@ -1,3 +1,7 @@
+h3 {
+	margin-bottom: 25px;
+}
+
 .profile-container {
 	position: relative;
 	float: left;
@@ -111,6 +115,8 @@ aside > .user-info > .rank {
 
 .personal-info > label {
 	width: 100%;
+	font-size: 13px;
+	color: #888;
 	margin-bottom: 10px;
 }
 
@@ -134,11 +140,143 @@ aside > .user-info > .rank {
 	cursor: pointer;
 }
 
+.address-card, .credit-card-entry {
+	float: left;
+	position: relative;
+	width: calc(100% - 40px);
+	height: auto;
+	background: #EEE;
+	padding: 20px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+.address-card > .title,
+.credit-card-entry > .title {
+	float: left;
+	width: 100%;
+	height: auto;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.address-card > .description {
+	float: left;
+	width: 100%;
+	font-size: 13px;
+	color: #888;
+}
+
+.manage {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 24px;
+	height: 24px;
+	user-select: none;
+}
+
+.manage > svg {
+	float: right;
+	width: 24px;
+	height: 24px;
+	fill: #888;
+	cursor: pointer;
+}
+
+.manage > .options {
+	display: none;
+	position: absolute;
+	width: 140px;
+	height: auto;
+	right: 0px;
+	top: 30px;
+	padding-top: 10px;
+	background: #FFF;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.manage > .options > p {
+	padding: 10px;
+	padding-top: 0px;
+	font-size: 14px;
+	color: #888;
+}
+
+.manage > .options > p:hover {
+	color: #b30644;
+}
+
+.currentAddress > .active, .payment-info > .active {
+	background: #b30664;
+}
+
+.payment-info > .active > .title,
+.currentAddress > .active > .title,
+.currentAddress > .active > .description {
+	color: #FFF;
+}
+
+.currentAddress > .active > .manage > svg,
+.payment-info > .active > .manage > svg {
+	fill: #FFF;
+}
+
+.addButton {
+	float: left;
+	width: calc(100% - 4px);
+	height: 50px;
+	background: #FFF;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px dashed #AAA;
+	cursor: pointer;
+	color: #AAA;
+}
+
+.addButton:hover {
+	border: 2px dashed #b30664;
+	color: #b30664;
+}
+
+.credit-card-entry > .flag {
+	float: left;
+	width: 80px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.visa {
+	background-image: url(../img/card-flags/visa.png);
+	background-size: 60px;
+}
+
+.mastercard {
+	background-image: url(../img/card-flags/mastercard.png);
+	background-size: 60px;
+}
+
+.credit-card-entry > .title {
+	float: left;
+	width: calc(100% - 100px);
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
 .bannerWrapper {
 	margin-top: 40px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 970px) {
 	.profile-container > aside {
 		width: 66px;
 	}
@@ -177,5 +315,10 @@ aside > .user-info > .rank {
 	.section-container > div {
 		width: 90%;
 		padding: 20px 5%;
+	}
+
+	.personal-info > label,
+	.personal-info > .changer {
+		width: calc(100% - 20px);
 	}
 }

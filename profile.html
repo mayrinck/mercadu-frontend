@@ -199,6 +199,7 @@
     </aside>
     <div class="section-container">
       <div class="personal-info">
+          <h3>Suas Informações</h3>
           <label for="data-name">Nome:</label>
           <input class="changer" id="data-name" type="text" value="Nome Completo do Usuário" disabled>
 
@@ -213,13 +214,93 @@
           </button>
       </div>
       <div class="address-info">
-        SHAZAM
+        <div class="currentAddress">
+          <h3>Endereços Registrados</h3>
+          <div class="address-card active">
+            <p class="title">Casa</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+
+            <div class="manage">
+              <svg viewBox="0 0 24 24">
+                  <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
+              </svg>
+
+              <div class="options">
+                <p class="mark">Tornar Padrão</p>
+                <p class="delete">Excluir</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="address-card">
+            <p class="title">Outra Casa</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+
+            <div class="manage">
+              <svg viewBox="0 0 24 24">
+                  <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
+              </svg>
+
+              <div class="options">
+                <p class="mark">Tornar Padrão</p>
+                <p class="delete">Excluir</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="addButton" id="create-new-address">
+            + Cadastrar Endereço
+          </button>
+        </div>
+        <div class="registerNewAddress">
+
+        </div>
       </div>
       <div class="payment-info">
-        VAI TEIA
+        <h3>Seus cartões</h3>
+
+        <div class="credit-card-entry active">
+          <div class="flag visa"></div>
+          <p class="title">1111 2222 3333 4444</p>
+
+          <div class="manage">
+            <svg viewBox="0 0 24 24">
+                <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
+            </svg>
+
+            <div class="options">
+              <p class="mark">Tornar Padrão</p>
+              <p class="delete">Excluir</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit-card-entry">
+          <div class="flag mastercard"></div>
+          <p class="title">5555 4444 3333 2222</p>
+
+          <div class="manage">
+            <svg viewBox="0 0 24 24">
+                <path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" />
+            </svg>
+
+            <div class="options">
+              <p class="mark">Tornar Padrão</p>
+              <p class="delete">Excluir</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="addButton" id="create-new-card">
+          + Cadastrar Cartão
+        </button>
       </div>
       <div class="account-info">
-        HADOU-KEN
+        <h3>Informações de Segurança</h3>
       </div>
     </div>
   </div>

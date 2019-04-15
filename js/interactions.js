@@ -91,4 +91,8 @@ $(document).ready(function(){
     $(ResetSections).hide();
     $(".account-info").show();
   });
+
+  $(".manage").click(function(){
+    $(".options", this).toggle();
+  });
 });
