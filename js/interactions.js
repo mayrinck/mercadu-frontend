@@ -92,7 +92,7 @@ $(document).ready(function(){
 
   $("#showAccountInfo").click(function(){
     $(ResetSections).hide();
-    $(".account-info").show();
+    $(".account-info").show();    
   });
 
   $(".manage").click(function(){
