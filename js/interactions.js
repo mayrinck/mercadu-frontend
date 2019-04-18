@@ -125,4 +125,12 @@ $(document).ready(function(){
     $(".credit-card-list").hide();
     $(".boleto-list").show();
   });
+
+  $("#finish").click(function(){
+  	$(ResetModal).hide();
+    $('body').addClass("block-scrolling");
+    $(".frame").removeClass("NeedMoreSpace");
+    $(".frame").removeClass("large");
+    $(".darkFrame, .buyingComplete").show();
+  });
 });

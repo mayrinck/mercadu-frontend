@@ -307,3 +307,30 @@
 .total p, .frete p {
   font-size: 14px;
 }
+
+.buyingComplete > .icon {
+  float: left;
+  width: 180px;
+  height: 180px;
+  margin-left: calc(50% - 90px);
+  margin-right: calc(50% - 90px);
+  background-image: url(../img/success-icon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.buyingComplete > .title,
+.buyingComplete > .description {
+  float: left;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.buyingComplete > .description {
+  font-size: 14px;
+  font-weight: 500;
+}
