@@ -982,6 +982,24 @@ footer {
 	color: #444;
 }
 
+.product-modal > .quantity-wrapper {
+  position: absolute;
+	right: 20px;
+	bottom: 80px;
+}
+
+.quantity-wrapper > label {
+  font-size: 13px;
+}
+
+.quantity-wrapper > #quantity {
+  width: 120px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  border: none;
+}
+
 .product-modal > .buy {
 	position: absolute;
 	right: 20px;
@@ -1001,7 +1019,7 @@ footer {
 
 .large { /* USAR SOMENTE NO MODAL - CLASSE (.frame) */
 	width: 60vw !important;
-	margin-left: 25vw !important;
+	margin-left: 20vw !important;
 	border-radius: 5px;
 }
 

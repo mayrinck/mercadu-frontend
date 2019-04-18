@@ -32,6 +32,7 @@ $(document).ready(function(){
 
   $(".product-image").click(function(){
   	$(ResetModal).hide();
+    $('body').addClass("block-scrolling");
     $(".frame").addClass("large");
     $(".darkFrame, .product-modal").show();
   });
@@ -44,6 +45,7 @@ $(document).ready(function(){
 
   $(".close-modal").click(function(){
     $(".darkFrame").hide();
+    $('body').removeClass("block-scrolling");
     $(".frame").removeClass("NeedMoreSpace");
     $(".frame").removeClass("large");
   });
