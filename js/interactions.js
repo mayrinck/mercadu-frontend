@@ -110,4 +110,19 @@ $(document).ready(function(){
     $(".currentCards").hide();
     $(".addCard").show();
   });
+
+  $(".changer-wrapper > button").click(function(){
+    $(".changer-wrapper > button").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $("#forceCard").click(function(){
+    $(".credit-card-list").show();
+    $(".boleto-list").hide();
+  });
+
+  $("#forceBoleto").click(function(){
+    $(".credit-card-list").hide();
+    $(".boleto-list").show();
+  });
 });

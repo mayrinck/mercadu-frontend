@@ -3,7 +3,22 @@
   width: 100%;
   height: auto;
   padding-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #DDD;
+}
+
+.module > .left {
+  float: left;
+  width: 35%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.module > .right {
+  float: right;
+  width: 65%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .productsTable {
@@ -120,4 +135,102 @@
 .totalPrice > p:nth-child(2) {
   float: right;
   color: #b30664;
+}
+
+.left > .changer-wrapper {
+  float: left;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #b30664;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.left > .changer-wrapper > button {
+  float: left;
+  width: 50%;
+  height: 40px;
+  border: none;
+  background: #FFF;
+  cursor: pointer;
+  color: #b30664;
+}
+
+.left > .changer-wrapper > .active {
+  color: #FFF;
+  background: #b30664;
+}
+
+.address-card, .credit-card-entry {
+	float: left;
+	position: relative;
+	width: calc(100% - 40px);
+	height: auto;
+	background: #EEE;
+	padding: 20px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+.left > .active,
+.credit-card-list > .active {
+	background: #b30664;
+}
+
+.address-card > .title {
+	float: left;
+	width: 100%;
+	height: auto;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.address-card > .description {
+	float: left;
+	width: 100%;
+	font-size: 13px;
+	color: #888;
+}
+
+.active > .title,
+.active > .description {
+  color: #FFF;
+}
+
+.credit-card-entry > .flag {
+	float: left;
+	width: 80px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.visa {
+	background-image: url(../img/card-flags/visa.png);
+	background-size: 60px;
+}
+
+.mastercard {
+	background-image: url(../img/card-flags/mastercard.png);
+	background-size: 60px;
+}
+
+.credit-card-entry > .title {
+	float: left;
+	width: calc(100% - 100px);
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.module > .left > a > .shop {
+  margin-top: 0px;
+}
+
+.boleto-list {
+  display: none;
 }
