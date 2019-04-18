@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
 
   <link rel="icon" type="image/png" href="img/favicon.png" />
-  <link rel="manifest" href="https://mayrinck.github.io/mercadu-frontend/manifest.json">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/result.css">
+  <link rel="stylesheet" href="css/checkout.css">
 
   <title>Checkout - Mercadu</title>
 </head>
@@ -157,12 +156,105 @@
 	</header>
 
 	<section class="content">
-		<h3>Confira seus produtos</h3>
+    <div class="module">
+      <h3>Confira seus produtos</h3>
 
-		<div class="productsTable">
-      <div class="tableHead">
-        
+  		<div class="productsTable">
+        <div class="tableHead">
+          <div class="cell">
+            <p class="first">
+              Produtos
+            </p>
+          </div>
+          <div class="cell">
+            <p>
+              Quantidade
+            </p>
+          </div>
+          <div class="cell">
+            <p>
+              Preço Unitário
+            </p>
+          </div>
+          <div class="cell">
+            <p>
+              Total
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="cell">
+            <button class="remove" title="Remover Produto">
+              <svg viewBox="0 0 24 24">
+                  <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+              </svg>
+            </button>
+            <p class="product-name">
+              Nome do Produto
+            </p>
+          </div>
+          <div class="cell">
+            <p class="product-quantity">
+              4
+            </p>
+          </div>
+          <div class="cell">
+            <p class="product-value">
+              R$ 10,00
+            </p>
+          </div>
+          <div class="cell">
+            <p class="product-total">
+              R$ 40,00
+            </p>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="cell">
+            <button class="remove" title="Remover Produto">
+              <svg viewBox="0 0 24 24">
+                  <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+              </svg>
+            </button>
+            <p class="product-name">
+              Nome do Produto
+            </p>
+          </div>
+          <div class="cell">
+            <p class="product-quantity">
+              4
+            </p>
+          </div>
+          <div class="cell">
+            <p class="product-value">
+              R$ 10,00
+            </p>
+          </div>
+          <div class="cell">
+            <p class="product-total">
+              R$ 40,00
+            </p>
+          </div>
+        </div>
+
+        <div class="totalPrice">
+          <p>TOTAL</p>
+          <p>R$ 80,00</p>
+        </div>
       </div>
+
+      <div class="keepShopping">
+        <p>Se esqueceu de incluir algo?</p>
+
+        <a href="products.html">
+          <button class="shop">Voltar a Loja</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="module">
+
     </div>
 	</section>
 
