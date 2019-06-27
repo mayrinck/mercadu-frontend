@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+body {
+  position: relative;
+  background-color: rgba(93, 111, 140, 10%);
+}
+
+aside {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 80px;
+  height: 100vh;
+  background: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  width: 80px;
+  height: 65px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/favicon.png");
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-size: 50%;
+}
+
+nav {
+  float: left;
+  width: 80px;
+  height: auto;
+  padding: 15px 0px;
+}
+
+nav > button {
+  float: left;
+  width: 80px;
+  height: 60px;
+  border: none;
+  background: #000;
+  margin-bottom: 3px;
+}
+
+section {
+  float: left;
+  width: 100%;
+  height: auto;
+}
