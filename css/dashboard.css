@@ -43,8 +43,35 @@ nav > button {
   width: 80px;
   height: 60px;
   border: none;
-  background: #000;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
   margin-bottom: 3px;
+}
+
+.dashboard {
+  background-size: 32px;
+  background-image: url(../img/dashboard.svg);
+}
+
+.lists {
+  background-size: 39px;
+  background-image: url(../img/promo.png);
+}
+
+.tags {
+  background-size: 39px;
+  background-image: url(../img/tags.png);
+}
+
+.promo {
+  background-size: 39px;
+  background-image: url(../img/promo.png);
+}
+
+.user {
+  background-size: 23px;
+  background-image: url(../img/user.png);
 }
 
 section {
