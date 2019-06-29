@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,20 +79,18 @@
              inkscape:connector-curvature="0" />
         </g>
       </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.42959809px;line-height:1.25;font-family:Basetica;-inkscape-font-specification:Basetica;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.13015704"
-         x="79.438835"
-         y="282.63129"
-         id="text2021"
+      <g
+         aria-label="%"
          transform="rotate(15.120113)"
-         inkscape:transform-center-x="-0.31199886"
-         inkscape:transform-center-y="-0.15292625"><tspan
-           sodipodi:role="line"
-           id="tspan2019"
-           x="79.438835"
-           y="282.63129"
-           style="fill:#ffffff;stroke-width:0.13015704">%</tspan></text>
+         inkscape:transform-center-x="-0.23263025"
+         inkscape:transform-center-y="-0.11401839"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.81155038px;line-height:1.25;font-family:Basetica;-inkscape-font-specification:Basetica;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.09704734"
+         id="text2021">
+        <path
+           d="m 80.057369,281.66283 c 0,0.19927 0.15217,0.346 0.349629,0.346 0.195647,0 0.347818,-0.15579 0.347818,-0.346 0,-0.2029 -0.152171,-0.34963 -0.347818,-0.34963 -0.197459,0 -0.349629,0.14673 -0.349629,0.34963 z m 0.177532,0 c 0,-0.10507 0.07427,-0.18297 0.172097,-0.18297 0.09601,0 0.170286,0.0779 0.170286,0.18297 0,0.096 -0.07427,0.17934 -0.170286,0.17934 -0.09782,0 -0.172097,-0.0779 -0.172097,-0.17934 z m 0.806139,-0.32789 h 0.190213 l -0.53803,1.30431 h -0.192025 z m 0.635855,0.97642 c 0,-0.19927 -0.152171,-0.34601 -0.34963,-0.34601 -0.195647,0 -0.347817,0.1558 -0.347817,0.34601 0,0.20289 0.15217,0.34963 0.347817,0.34963 0.197459,0 0.34963,-0.14674 0.34963,-0.34963 z m -0.177532,0 c 0,0.10507 -0.07427,0.18297 -0.172098,0.18297 -0.09601,0 -0.170285,-0.0779 -0.170285,-0.18297 0,-0.096 0.07427,-0.17934 0.170285,-0.17934 0.09782,0 0.172098,0.0779 0.172098,0.17934 z"
+           style="fill:#ffffff;stroke-width:0.09704734"
+           id="path824" />
+      </g>
     </g>
   </g>
 </svg>

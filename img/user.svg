@@ -61,24 +61,24 @@
        transform="matrix(1.2477877,0,0,1.2477877,0.43124159,-71.193233)"
        style="stroke:#b3b3b3">
       <circle
-         r="1.0931121"
-         cy="290.06506"
-         cx="3.0197382"
+         r="0.88192672"
+         cy="290.13382"
+         cx="3.025018"
          id="path1427"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.31806292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.32056735;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          transform="scale(-1)"
-         d="m -0.30848432,-294.39447 a 2.7385819,2.7385819 0 0 1 -1.36929098,2.37168 2.7385819,2.7385819 0 0 1 -2.7385819,0 2.7385819,2.7385819 0 0 1 -1.3692909,-2.37168"
+         d="m -0.83756876,-293.87088 a 2.2094975,2.2094975 0 0 1 -1.10474874,1.91348 2.2094975,2.2094975 0 0 1 -2.2094975,0 2.2094975,2.2094975 0 0 1 -1.1047487,-1.91348"
          sodipodi:open="true"
          sodipodi:end="3.1415927"
          sodipodi:start="0"
-         sodipodi:ry="2.7385819"
-         sodipodi:rx="2.7385819"
-         sodipodi:cy="-294.39447"
+         sodipodi:ry="2.2094975"
+         sodipodi:rx="2.2094975"
+         sodipodi:cy="-293.87088"
          sodipodi:cx="-3.0470662"
          sodipodi:type="arc"
          id="path1427-3"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.31806292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b3b3b3;stroke-width:0.32056735;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
 </svg>
