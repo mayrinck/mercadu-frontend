@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="12.741017"
-     inkscape:cx="0.51358014"
-     inkscape:cy="16.078605"
+     inkscape:cx="22.018928"
+     inkscape:cy="16.235578"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -59,17 +59,17 @@
     <g
        id="g885"
        transform="matrix(1.4371103,0,0,1.0782139,-2.0196702,-22.895079)"
-       style="fill:#ffffff;fill-opacity:1">
+       style="fill:#b10161;fill-opacity:1">
       <path
          id="rect847"
          d="m 1.7145031,289.04647 v 5.17074 h 2.512508 v -5.17074 z m 0,5.54488 v 1.88929 h 2.512508 v -1.88929 z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#b10161;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          id="rect847-2"
          transform="matrix(0.26458333,0,0,0.26458333,0,288.53332)"
          d="m 16.912109,1.9394531 v 5.8867188 h 9.498047 V 1.9394531 Z m 0,7.2988281 V 30.037109 h 9.498047 V 9.2382812 Z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#b10161;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          inkscape:connector-curvature="0" />
     </g>
   </g>

@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="19.111525"
-     inkscape:cx="19.910969"
-     inkscape:cy="16.173464"
+     inkscape:cx="16.50854"
+     inkscape:cy="14.760704"
      inkscape:document-units="px"
      inkscape:current-layer="g1446"
      showgrid="false"
@@ -65,7 +65,7 @@
          cy="290.13382"
          cx="3.025018"
          id="path1427"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.32056735;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b10161;stroke-width:0.32056735;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          transform="scale(-1)"
          d="m -0.83756876,-293.87088 a 2.2094975,2.2094975 0 0 1 -1.10474874,1.91348 2.2094975,2.2094975 0 0 1 -2.2094975,0 2.2094975,2.2094975 0 0 1 -1.1047487,-1.91348"
@@ -78,7 +78,7 @@
          sodipodi:cx="-3.0470662"
          sodipodi:type="arc"
          id="path1427-3"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.32056735;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b10161;stroke-width:0.32056735;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
 </svg>

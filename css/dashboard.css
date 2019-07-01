@@ -1,7 +1,30 @@
+/* INTEGRAÇÃO DE FONTES */
+@font-face {
+    font-family: Museo100;
+    src: url("../thirdParty/fonts/MuseoSans-100.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Museo300;
+    src: url("../thirdParty/fonts/MuseoSans-300.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Museo500;
+    src: url("../thirdParty/fonts/MuseoSans-500.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Museo700;
+    src: url("../thirdParty/fonts/MuseoSans-700.otf") format("opentype");
+}
+
+/* RESET */
 * {
-  margin: 0px;
-  padding: 0px;
-  outline: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Museo300", "Museo Sans", sans-serif;
+	outline: none;
 }
 
 body {
@@ -17,7 +40,7 @@ aside {
   width: 80px;
   height: 100vh;
   background: #FFF;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -46,6 +69,7 @@ nav > button {
   margin-left: 12px;
   margin-bottom: 3px;
   border: none;
+  cursor: pointer;
   border-radius: 100%;
   background-size: 32px;
   background-position: center;
@@ -53,8 +77,8 @@ nav > button {
   background-repeat: no-repeat;
 }
 
-nav > .active {
-  background-color: #b10161;
+nav > button:hover {
+  background-color: rgba(235, 235, 235, 0.3);
 }
 
 .dashboard {
@@ -77,15 +101,62 @@ nav > .active {
   background-image: url(../img/user.svg);
 }
 
+.dashboard-active {
+  background-image: url(../img/dashboard-active.svg);
+}
+
+.lists-active {
+  background-image: url(../img/lists-active.svg);
+}
+
+.tags-active {
+  background-image: url(../img/tags-active.svg);
+}
+
+.promo-active {
+  background-image: url(../img/promo-active.svg);
+}
+
+.user-active {
+  background-image: url(../img/user-active.svg);
+}
+
 header {
-  float: left;
+  float: right;
   width: 100%;
   height: 60px;
   margin-bottom: 10px;
 }
 
+.menu2 {
+  float: right;
+  width: auto;
+  height: 50px;
+  margin-top: 5px;
+  margin-right: 2.5%;
+  padding: 0px 55px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url(../img/menu2.svg);
+  background-position: 95% center;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  color: #222;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.1s ease-in-out;
+}
+
+.menu2:hover {
+  background-color: #DDD;
+}
+
 section {
-  float: left;
-  width: 100%;
+  float: right;
+  width: calc(95% - 80px);
   height: auto;
+  padding: 0px 2.5%;
 }
