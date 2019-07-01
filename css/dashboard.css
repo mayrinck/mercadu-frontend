@@ -167,3 +167,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+.default {
+  float: left;
+  width: 70%;
+  height: auto;
+}
+
+.content > .right {
+  float: right;
+  width: 25%;
+  height: auto;
+}
