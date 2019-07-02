@@ -27,10 +27,29 @@
 	outline: none;
 }
 
+/* ANIMAÇÕES */
+@keyframes spinning {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(360deg);}
+}
+
+/* ESTILOS */
 body {
   position: relative;
   overflow: hidden;
   background-color: rgba(93, 111, 140, 10%);
+}
+
+.loader {
+  float: left;
+  width: 48px;
+  height: 48px;
+  background: center no-repeat url("../img/loader.svg");
+  background-size: contain;
+  animation-name: spinning;
+  animation-duration: 1.25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 aside {
