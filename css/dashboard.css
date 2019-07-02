@@ -40,18 +40,6 @@ body {
   background-color: rgba(93, 111, 140, 10%);
 }
 
-.loader {
-  float: left;
-  width: 48px;
-  height: 48px;
-  background: center no-repeat url("../img/loader.svg");
-  background-size: contain;
-  animation-name: spinning;
-  animation-duration: 1.25s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
 aside {
   position: absolute;
   left: 0px;
@@ -211,4 +199,19 @@ h1, h2, h3, h4, h5, h6 {
   background: #FFF;
   border-radius: 7px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* LOADER */
+.loader {
+  float: left;
+  width: 48px;
+  height: 48px;
+  background: center no-repeat url("../img/loader.svg");
+  background-size: contain;
+  animation-name: spinning;
+  animation-duration: 1.25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
