@@ -201,7 +201,50 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.best-selling-module > .wrapper > .entry > .name {
+  float: left;
+  font-size: 16px;
+  padding: 7px 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 28px;
+  cursor: default;
+}
 
+.blue {
+  color: #444;
+  background: #63D4FF;
+}
+
+.orange {
+  color: #444;
+  background: #FFA657;
+}
+
+.best-selling-module > .wrapper > .entry > .price {
+  float: right;
+  font-size: 26px;
+  margin-right: 20px;
+  margin-top: 30px;
+  cursor: default;
+}
+
+.best-selling-module > .wrapper > a > .show-more {
+  float: left;
+  width: 100%;
+  height: 40px;
+  color: #888;
+  border: none;
+  border-radius: 60px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.best-selling-module > .wrapper > a > .show-more:hover {
+  color: #666;
+  background: rgba(93, 111, 140, 7%);
+}
 
 /* LOADER */
 .loader {
