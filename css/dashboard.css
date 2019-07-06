@@ -283,6 +283,15 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FFF;
 }
 
+.income-module > button {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 10px 0px;
+    border-radius: 40px;
+    margin-left: 25%;
+}
+
 .promotions-module > .wrapper {
     display: flex;
     justify-content: space-between;
