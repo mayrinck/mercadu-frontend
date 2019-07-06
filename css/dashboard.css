@@ -181,13 +181,16 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
+.default > div {
+    float: left;
+    margin-bottom: 30px;
+}
+
 .content > .right {
   float: right !important;
   width: 25%;
   height: auto;
 }
-
-
 
 .best-selling-module > .wrapper {
   padding-top: 15px;
