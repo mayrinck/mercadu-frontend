@@ -186,6 +186,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 25%;
   height: auto;
 }
+
+
+
 .best-selling-module > .wrapper {
   padding-top: 15px;
 }
@@ -275,6 +278,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 240px;
     margin-top: 20px;
     background-color: #FFF;
+}
+
+.promotions-module > .wrapper {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
 }
 
 /* LOADER */
