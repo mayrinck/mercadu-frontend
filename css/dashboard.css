@@ -269,6 +269,14 @@ h1, h2, h3, h4, h5, h6 {
     float: right;
 }
 
+.income-module > .graph-container {
+    float: left;
+    width: 100%;
+    height: 240px;
+    margin-top: 25px;
+    background-color: #FFF;
+}
+
 /* LOADER */
 .loader {
   float: left;
