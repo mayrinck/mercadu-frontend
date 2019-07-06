@@ -211,6 +211,11 @@ h1, h2, h3, h4, h5, h6 {
   cursor: default;
 }
 
+.red {
+    color: #444;
+    background: #e74c3c;
+}
+
 .blue {
   color: #222;
   background: #3498db;
@@ -224,6 +229,11 @@ h1, h2, h3, h4, h5, h6 {
 .orange {
   color: #444;
   background: #e67e22;
+}
+
+.purple {
+    color: #222;
+    background: #e74c3c;
 }
 
 .best-selling-module > .wrapper > .entry > .price {
