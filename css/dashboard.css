@@ -213,17 +213,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .blue {
   color: #444;
-  background: #63D4FF;
+  background: #3498db;
 }
 
 .green {
-  color: #555;
+  color: #444;
   background: #2ecc71;
 }
 
 .orange {
   color: #444;
-  background: #FFA657;
+  background: #e67e22;
 }
 
 .best-selling-module > .wrapper > .entry > .price {
