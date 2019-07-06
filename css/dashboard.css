@@ -261,6 +261,10 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(93, 111, 140, 7%);
 }
 
+.income-module {
+    
+}
+
 /* LOADER */
 .loader {
   float: left;
