@@ -37,7 +37,7 @@
 body {
   position: relative;
   overflow: hidden;
-  background-color: rgba(93, 111, 140, 10%);
+  background-color: rgba(93, 111, 140, 0.1);
 }
 
 aside {
@@ -131,15 +131,15 @@ nav > button:hover {
 header {
   float: right;
   width: 100%;
-  height: 60px;
+  height: 65px;
   margin-bottom: 20px;
 }
 
 .menu2 {
   float: right;
   width: auto;
-  height: 50px;
-  margin-top: 5px;
+  height: 49px;
+  margin-top: 8px;
   margin-right: 2.5%;
   padding: 0px 55px;
   padding-left: 20px;
@@ -154,11 +154,11 @@ header {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: background 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .menu2:hover {
-  background-color: rgba(93, 111, 140, 7%);
+  background-color: rgba(93, 111, 140, 0.1);
 }
 
 section {
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blue {
   color: #222;
-  background: #3498db;
+  background: #74b9ff;
 }
 
 .green {
@@ -266,34 +266,54 @@ h1, h2, h3, h4, h5, h6 {
 
 .best-selling-module > .wrapper > a > .show-more:hover {
   color: #666;
-  background: rgba(93, 111, 140, 7%);
+  background: rgba(93, 111, 140, 0.1);
 }
 
 .income-module > h1 {
-    float: left;
+  float: left;
 }
 
 .income-module > select {
-    float: right;
+  float: right;
+  padding: 5px;
+  margin-top: -7px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #888;
+}
+
+.income-module > select:focus {
+  color: #222;
 }
 
 .income-module > .graph-container {
-    float: left;
-    width: 100%;
-    height: 240px;
-    margin-top: 20px;
-    background-color: #FFF;
+  float: left;
+  width: 100%;
+  height: 240px;
+  margin-top: 20px;
+  background-color: #FFF;
 }
 
 .income-module > button {
-    float: left;
-    width: 50%;
-    height: auto;
-    padding: 10px 0px;
-    border-radius: 40px;
-    margin-left: 25%;
-    border: none;
-    background: none;
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 10px 0px;
+  border-radius: 40px;
+  transition: all 0.1s ease-in-out;
+  margin-left: 25%;
+  margin-top: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.income-module > button:hover {
+  color: #222;
+  background: rgba(93, 111, 140, 0.1);
 }
 
 .promotions-module > .wrapper {
@@ -316,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
     .promotions-module > .wrapper {
         flex-direction: collumn;
     }
-    
+
     .promotions-module > .wrapper > .half {
         width: 100%;
         margin-bottom: 20px;
